@@ -14,7 +14,7 @@
            fetch="ssh://git@github.com" />
   
   <remote name="washez"
-		   fetch=".." />
+		   fetch="." />
 
   <default revision="refs/heads/cm-13.0"
            remote="github"
