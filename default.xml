@@ -14,13 +14,12 @@
            fetch="ssh://git@github.com" />
   
   <remote name="washez"
-		   fetch="." />
+		   fetch="https://github.com/pdigennaro" />
 
   <default revision="refs/heads/cm-13.0"
            remote="github"
            sync-c="true"
            sync-j="4" />
-           
            
   <!-- WASHEZ ROM CUSTOM CODE -->
   <project path="device/leeco/x2" name="android_device_leeco_x2" remote="washez" revision="cm-13.0" />
