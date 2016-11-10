@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-6.0.1_r72" />
+           revision="refs/tags/android-6.0.1_r74" />
 
   <remote  name="github"
            fetch="https://github.com"
@@ -22,9 +22,9 @@
            sync-j="4" />
            
   <!-- WASHEZ ROM CUSTOM CODE -->
-  <project path="device/leeco/x2" name="android_device_leeco_x2" remote="washez" revision="cm-13.0" />
-  <project path="vendor/leeco" name="proprietary_vendor_leeco" remote="washez" revision="m6.0.1" />
-  <project path="kernel/leeco/msm8996" name="kernel_leeco_msm8996" remote="washez" revision="m6.0.1" />
+  <project path="device/leeco/x2" name="android_device_leeco_x2" remote="washez" revision="washez-cm13" />
+  <project path="vendor/leeco" name="android_vendor_leeco_x2" remote="washez" revision="cm-13.0" />
+  <project path="kernel/leeco/msm8996" name="android_kernel_letv_msm8996" remote="washez" revision="washez" />
   <!--<project path="hardware/qcom/display" name="hardware_qcom_display" remote="washez" revision="m6.0.1-caf-8996" />-->
   <!--<project path="hardware/qcom/msm8960" name="hardware_qcom_msm8960" remote="washez" revision="n7.0" />-->
   <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" revision="cm-13.0" />
