@@ -2,8 +2,8 @@
 <manifest>
 
   <remote  name="github"
-           fetch=".."
-           review="review.cyanogenmod.org" />
+		   fetch="https://github.com"           
+		   review="review.cyanogenmod.org" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -12,14 +12,21 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
            revision="refs/tags/android-7.1.0_r7" />
+           
+  <remote name="washez"
+		   fetch="." />
 
   <default revision="refs/heads/cm-14.1"
            remote="github"
            sync-c="true"
            sync-j="4" />
 
-  <!-- AOSP Projects -->
+  <!-- WASHEZ ROM CUSTOM CODE -->
+  <project path="device/letv/le_x2" name="android_device_letv_le_x2-zhaochengw" remote="washez" revision="cm-14.1" />
+  <project path="vendor/letv/le_x2" name="android_vendor_letv_le_x2-zhaochengw" remote="washez" revision="cm-14.1" />
+  <project path="kernel/letv/msm8996" name="android_kernel_letv_msm8996-zhaochengw" remote="washez" revision="cm-14.1" />
 
+  <!-- AOSP Projects -->
   <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
